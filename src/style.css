@@ -1,0 +1,76 @@
+body{
+ margin: 0;
+ font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    background-color: #F55A5A;
+    padding: 0.5%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+}
+
+.strong{
+    font-weight: bold;
+}
+
+.header--title{
+    display: flex;
+    justify-content: center; 
+    color: white; 
+    text-decoration: none; 
+    align-items: center;
+}
+
+.fa-earth-oceania{ 
+    margin: 5px 10px 0 0;
+    color: white;
+  }
+
+  .card{
+      display: flex;
+  }
+
+  .card--content{
+      padding: 50px 0 0 0 ;
+  }
+
+  .card--image{
+      width: 20%;
+      height: 20%;
+      padding: 40px;
+      border-radius: 25%;
+  }
+
+  .fa-location-dot{
+      color: #F55A5A;
+      padding: 5px;
+  }
+
+  .card--location{
+      display: flex;
+      align-items: center;
+      margin-bottom: 0;
+  }
+
+  .card--googlemaplink{
+      margin : 0 0 0 25px;
+      color: gray;
+      font-size: 0.9em;
+  }
+
+  .card--title, .card--description{
+      margin-top: 0;
+  }
+
+  .card--date{
+      margin-bottom: 5px;
+      font-size: 0.9em;
+  }
+
+  .card--line{
+      border: solid 1px #F5F5F5;
+      color: #6c6a6a;
+      margin: 0 40px 0 40px;
+  }
