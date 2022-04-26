@@ -37,10 +37,11 @@ body{
   }
 
   .card--image{
-      width: 20%;
-      height: 20%;
+      border-radius: 50px;
+      width: 250px;
+      height: 250px;
       padding: 40px;
-      border-radius: 25%;
+
   }
 
   .fa-location-dot{

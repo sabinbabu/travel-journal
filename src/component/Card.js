@@ -1,7 +1,6 @@
 import React from "react"
 
 export default function Card(props){
-    console.log(props)
     let googleLink = "https://www.google.com.au/maps/place/"+props.title+"/"
     return(
         <div>
