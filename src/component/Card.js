@@ -1,19 +1,21 @@
 import React from "react"
 
-export default function Card(){
+export default function Card(props){
+    console.log(props)
+    let googleLink = "https://www.google.com.au/maps/place/"+props.title+"/"
     return(
         <div>
         <div className="card">
-            <img className="card--image" src="https://source.unsplash.com/WLxQvbMyfas"></img>
+            <img className="card--image" src={props.photo_url}></img>
             <div className="card--content">
                 <div className="card--location">
                     <i class="fa-solid fa-location-dot"></i>
-                    <p className="card--locationtitle">JAPAN<span className="card--googlemap"><a className="card--googlemaplink" href="www.google.com">View on Google Maps</a></span></p>
+                    <p className="card--locationtitle">{props.title}<span className="card--googlemap"><a className="card--googlemaplink" href={googleLink} target="_blank">View on Google Maps</a></span></p>
                 </div>
-                <h2 className="card--title">Mount Fiji</h2>
-                <p className="card--date strong">12 Jan, 2021 - 24 Jan, 2021</p>
+                <h2 className="card--title">{props.location}</h2>
+                <p className="card--date strong">{props.date_start} - {props.date_end}</p>
                 <p className="card--description">
-                Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters (12,380 feet). Mount Fuji is the single most popular tourist site in Japan, for both Japanese and foreign tourists.
+                    {props.description}
                 </p>
             </div>
         </div>
